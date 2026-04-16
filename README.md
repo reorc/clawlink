@@ -58,6 +58,19 @@ curl -fsSL .../scripts/install.sh | sh -s -- --install-dir /opt/clawlink/bin
 
 使用 `--global` 时 clawlink 安装到 `/usr/local/bin/`，bridge 仍在 `~/.clawlink/bin/`。
 
+## 升级
+
+```bash
+# 升级到最新版（自动重启 bridge）
+clawlink upgrade
+
+# 只检查有没有新版本
+clawlink upgrade --check
+
+# 升级到指定版本
+clawlink upgrade --version 0.1.1
+```
+
 ## 卸载
 
 ```bash
